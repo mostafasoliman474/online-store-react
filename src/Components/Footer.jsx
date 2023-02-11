@@ -1,17 +1,18 @@
-
 import { Facebook, Instagram, LocalPhone, LocationOn, Mail, Pinterest, Twitter } from '@mui/icons-material'
-
-
 import styled from 'styled-components'
+import { mobile } from '../Responsive'
 const Container=styled.div`
     display: flex;
     justify-content: space-between;
     padding: 20px;
+    ${mobile({flexDirection:'column' , padding:'0'})}
 
 `
 const Left=styled.div`
     flex: 1;
     height: auto;
+    ${mobile({alignItems:'center',padding:'20px'})}
+  
 `
 const Logo=styled.h1`
     font-weight: bold;
@@ -45,6 +46,7 @@ const Center=styled.div`
    flex: 1;
     display: flex;
     flex-direction: column;
+    ${mobile({display:'none'})}
 `
 const Title=styled.h1`
     font-weight: bold;
@@ -67,8 +69,10 @@ const ListItem=styled.a`
 
 const Right=styled.div`
      flex: 1;
+     ${mobile({ backgroundColor: "#fdecec" ,width:'100%',padding:'20px'})}
 `
 const InfoContainer=styled.div`
+
     
 `
 const Info=styled.div`

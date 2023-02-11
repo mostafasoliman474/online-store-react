@@ -1,9 +1,10 @@
 
 import { FavoriteBorderOutlined, SearchOutlined, ShoppingCartOutlined} from "@mui/icons-material";
 import styled from "styled-components";
+import { mobile } from "../Responsive";
 const Container=styled.div`
     flex: 1;
-    min-width: 240px;
+    min-width: 280px;
     flex-wrap: wrap;
     height: 400px;
     position: relative;
@@ -13,13 +14,13 @@ const Container=styled.div`
     background-color: #e7ebfa;
     margin: 10px;
     border-radius: 10px;
+    ${mobile({width:'300px'})}
     
 `
 const Image=styled.img`
     height: 60%;
-
     z-index: 2;
-    
+    ${mobile({width: '50%',height: '200px'})}
 `
 const Info=styled.div`
     position: absolute;

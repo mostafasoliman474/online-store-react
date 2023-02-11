@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { PopularProduct } from "../Data";
+import { mobile } from "../Responsive";
 import { Product } from "./Product";
 const Container=styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 1rem;
-  padding:.5rem;
-    
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    ${mobile({flexDirection:'column',alignItems:'center',justifyContent:'spaceBetween'})}
 `
 export const Products = () => {
   return (

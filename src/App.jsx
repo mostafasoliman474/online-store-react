@@ -1,3 +1,4 @@
+import { Products } from "./Components/Products";
 import { Cart } from "./pages/Cart";
 import Home from "./pages/Home";
 import { LogIn } from "./pages/LogIn";
@@ -7,7 +8,7 @@ import Shopping from "./pages/Shopping";
 
 const App=()=>{
     return(
-        <Cart />
+        <Home />
     )
 }
 export default App;

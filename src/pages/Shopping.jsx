@@ -5,6 +5,7 @@ import { Footer } from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import { NewsLetter } from '../Components/NewsLetter';
 import { Products } from '../Components/Products';
+import { mobile } from '../Responsive';
 const Container=styled.div`
     
 `
@@ -12,12 +13,14 @@ const FilterContainer=styled.div`
     display: flex;
     justify-content: space-between;
     margin: 20px 0;
+    ${mobile({alignItems:'initial'})}
 `
 const Title=styled.h1`
     margin: 20px;
 `
 const Filter=styled.div`
     margin: 20px;
+    ${mobile({display:'flex',flexDirection:'column'})}
 `
 const Text=styled.span`
     font-size: 20px;
@@ -29,6 +32,7 @@ const Select=styled.select`
     border: .5px solid lightgray;
     padding: 5px 8px;
     margin: 0 10px;
+    ${mobile({margin:'10px 0'})}
 `
 const Option=styled.option`
     font-size: 20px;

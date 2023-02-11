@@ -1,5 +1,6 @@
 import { Send} from "@mui/icons-material"
 import styled from "styled-components"
+import { mobile } from "../Responsive"
 
 const Container=styled.div`
     height: 60vh;
@@ -15,9 +16,10 @@ const Head=styled.h1`
     margin: 20px;
 `
 const Info=styled.p`
-font-size: 24px;
-font-weight: 400;
-margin: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 10px;
+    ${mobile({textAlign:"center"})}
 `
 const InpField=styled.div`
     width: 50%;
@@ -27,6 +29,7 @@ const InpField=styled.div`
     font-weight: 600;
     margin: 10px;
     box-shadow: 0 0 2px 0 rgb(0 0 0);
+    ${mobile({width:"80%",})}
 `
 const Input=styled.input`
     outline: none;
@@ -36,7 +39,7 @@ const Input=styled.input`
     font-weight: 600;
     padding-left: 1rem;
     border-radius: 2px 0 0 2px;
-
+    /* ${mobile({fontSize:'12px',border:'solid 1px lightgray'})} */
     
 `
 const Button=styled.button`

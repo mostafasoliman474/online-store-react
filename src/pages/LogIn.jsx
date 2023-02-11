@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobile } from "../Responsive"
 
 const Container=styled.div`
     width: 100vw;
@@ -19,6 +20,7 @@ const Wrapper=styled.div`
     background-color: white;
     padding :20px;
     border-radius: 2px;
+    ${mobile({width:'88%'})}
 `
 
 const Title=styled.h1`
@@ -66,6 +68,7 @@ const Link=styled.a`
     text-decoration: underline;
     margin-top: 5px;
     letter-spacing: 1px;
+    cursor: pointer;
 `
 
 
@@ -81,7 +84,6 @@ export const LogIn = () => {
                 <Link>Forgotten password?</Link>
                 <Link>Create New Account</Link>
             </Form>
-        
         </Wrapper>
     
     </Container>
